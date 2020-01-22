@@ -1,0 +1,156 @@
+::selection {
+  background-color: var(--primary);
+  color: var(--secondary-grey);
+}
+
+::-moz-selection {
+  background-color: var(--primary);
+  color: var(--secondary-grey);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  position: relative;
+  font-family: var(--font-sans-serif);
+  cursor: default;
+}
+
+html {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%; /* this should produce 10px if your browser follows the unspoken rules */
+}
+
+body {
+  /* size */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* color */
+  color: var(--primary);
+  background-color: var(--secondary-light-grey);
+  /* font */
+  font-weight: 400;
+  font-size: var(--size-normal);
+  line-height: var(--size-normal-line);
+  letter-spacing: var(--size-letter-spacing-shrink);
+  font-variant-ligatures: no-common-ligatures;
+  font-feature-settings: "kern", "liga" 0, "clig" 0;
+  /* grid */
+  //display: grid;
+  //align-content: stretch;
+  //align-items: stretch;
+  //justify-content: stretch;
+  //justify-items: stretch;
+  //grid-gap: 1rem;
+}
+
+a, a:visited {
+  cursor: pointer !important;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  margin: 0.5rem 0;
+}
+
+a > img {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+p, li {
+  /*text-align: justify;*/
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h1 *,
+h2, h2 *,
+h3, h3 *,
+h4, h4 *,
+h5, h5 *,
+h6, h6 * {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--primary);
+  font-family: var(--font-serif);
+  letter-spacing: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 0.2rem;
+}
+
+h1, h1 * {
+  font-size: var(--size-h1);
+  line-height: var(--size-h1-line);
+}
+
+h2, h2 * {
+  font-size: var(--size-h2);
+  line-height: var(--size-h2-line);
+}
+
+h3, h3 * {
+  font-size: var(--size-h3);
+  line-height: var(--size-h3-line);
+}
+
+h4, h4 * {
+  font-size: var(--size-h4);
+  line-height: var(--size-h4-line);
+}
+
+h5, h5 * {
+  font-size: var(--size-h5);
+  line-height: var(--size-h5-line);
+}
+
+h6, h6 * {
+  font-size: var(--size-h6);
+  line-height: var(--size-h6-line);
+}
+
+pre > code {
+  color: var(--primary);
+  padding: 0.5rem !important;
+}
+
+pre * {
+  font-family: var(--font-monospace);
+  font-size: var(--size-normal);
+  line-height: var(--size-normal-line);
+  letter-spacing: normal;
+}
+
+.material-icons {
+  font-family: var(--font-fantasy);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
