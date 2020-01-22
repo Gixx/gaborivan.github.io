@@ -1,0 +1,11 @@
+{%- include variables.html -%}
+<ul class="m-menu__navigation">
+    {%- for dateSlug in dateSlugs limit:3 -%}
+        {%- assign dateLabel = dateLabels[forloop.index0] -%}
+    <li><a class="m-menu__link {% if dateSlug == currentDateSlug %} -current{% endif %}" href="/archive/{{ dateSlug }}/">{{ dateLabel | strip }}</a></li>
+    {%- endfor -%}
+</ul>
+{%- assign dateSlugSize = dateSlugs | size -%}
+{%- if dateSlugSize > 3 -%}
+<a class="m-menu__link -more" href="/archive/">More</a>
+{%- endif -%}

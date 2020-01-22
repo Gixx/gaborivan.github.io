@@ -1,0 +1,9 @@
+---
+layout: none
+---
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: *
+Allow: /
+Sitemap: {{ site.homepage }}/sitemap.xml

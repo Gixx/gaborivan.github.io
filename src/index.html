@@ -1,0 +1,19 @@
+---
+layout: default
+pagination:
+    enabled: true
+page_type: home
+---
+{%- include variables.html -%}
+
+<section class="c-content__list{% if paginator.page == 1 %} --home{% endif %}">
+    {%- for post in paginator.posts -%}
+        {% include post-list-element.html post=post %}
+    {%- endfor -%}
+
+    {%- if paginator.total_pages > paginator.per_page -%}
+    <footer class="c-footer">
+        {% include pagination.html %}
+    </footer>
+    {%- endif -%}
+</section>
