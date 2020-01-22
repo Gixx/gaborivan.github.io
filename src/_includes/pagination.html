@@ -1,0 +1,9 @@
+<nav>
+    {%- if paginator.previous_page -%}
+    <a class="prev" rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer articles</a>
+    {%- endif -%}
+    {%- if paginator.next_page -%}
+    <a class="next" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older articles &rarr;</a>
+    {%- endif -%}
+</nav>
+

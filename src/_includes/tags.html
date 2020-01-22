@@ -1,0 +1,28 @@
+{%- include variables.html -%}
+
+{%- capture counts_with_tags_string -%}
+    {%- for tag in site.tags -%}
+        {{ tag[1] | size | prepend:"000000" | slice:-6,6 }}:{{ tag[0] }}{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+{%- endcapture -%}
+
+{%- assign counts_with_tags = counts_with_tags_string | split:"," | sort | reverse -%}
+
+<ul class="m-menu__navigation">
+    {%- for count_with_tag in counts_with_tags limit:3 -%}
+        {%- assign tag = count_with_tag | split:":" | last | slugify -%}
+        {%- assign tagLabel = tag -%}
+        {% assign count = count_with_tag | split:":" | first | plus: 0 %}
+        {%- for tagSlug in tagSlugs -%}
+            {%- if tag == tagSlug -%}
+                {%- assign tagLabel = tagLabels[forloop.index0] -%}
+                {%- break -%}
+            {%- endif -%}
+        {%- endfor -%}
+    <li><a class="m-menu__link -{{ tag }}{% if page.page_type == 'tag_list' and tag == currentTagSlug %} -current{% endif %}" rel="tag" href="/tags/{{ tag }}/">{{ tagLabel | strip }} <sup>{{ count }}</sup></a></li>
+    {%- endfor -%}
+</ul>
+{%- assign tagSlugSize = tagSlugs | size -%}
+{%- if tagSlugSize > 3 -%}
+<a class="m-menu__link -more" href="/tags/">More</a>
+{%- endif -%}

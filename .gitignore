@@ -1,6 +1,10 @@
 .idea
 _site
 .sass-cache
-.idea
-/vendor/
-/tmp/
+.jekyll-cache
+.jekyll-metadata
+node_modules
+src/assets/js/site.min.js
+.DS_Store
+package-lock.json
+Gemfile.lock

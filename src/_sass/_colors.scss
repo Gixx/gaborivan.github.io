@@ -1,0 +1,32 @@
+
+$white: rgba(255, 255, 255, 1);
+$lighter-grey: rgba(248, 248, 248, 1);
+$light-grey: rgba(235, 235, 235, 1);
+$grey: rgba(220, 220, 220, 1);
+$dark-grey: rgba(155, 155, 155, 1);
+$darker-grey: rgba(117, 117, 117, 1);
+$deep-dark-grey: rgba(75, 75, 75, 1);
+$light-black: rgba(45, 45, 45, 1);
+$black: rgba(0, 0, 0, 1);
+
+$transparent: rgba(0, 0, 0, 0);
+$white-75: rgba(255, 255, 255, 0.75);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-50: rgba(255, 255, 255, 0.5);
+$white-25: rgba(255, 255, 255, 0.25);
+$dark-grey-50: rgba(155, 155, 155, 0.5);
+$black-75: rgba(0, 0, 0, 0.75);
+$black-50: rgba(0, 0, 0, 0.5);
+$black-25: rgba(0, 0, 0, 0.25);
+
+$light-red: rgba(255, 100, 100, 1);
+$red: rgba(255, 0, 0, 1);
+$dark-red: rgba(198, 0, 0, 1);
+
+$light-orange: rgba(236, 170, 29, 1);
+$orange: rgba(254, 128, 25, 1);
+$dark-orange: rgba(207, 93, 0, 1);
+
+$code-background: $lighter-grey !default;
+$code-gutter-border: rgba(0, 200, 0, 1);
+$code-gutter-background: $code-background !default;
