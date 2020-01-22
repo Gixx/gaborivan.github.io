@@ -1,0 +1,19 @@
+{
+  "parser": "esprima",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "indent": ["warn", 4],
+    "new-cap": 0,
+    "strict": 0,
+    "semi": [2, "always"],
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "eol-last": 0
+  }
+}

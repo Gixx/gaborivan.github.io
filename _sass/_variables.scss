@@ -1,0 +1,54 @@
+:root {
+  --primary: rgb(0, 0, 0);
+
+  --secondary: rgb(255, 255, 255);
+  --secondary-lighter-grey: rgb(246, 247, 249);
+  --secondary-light-grey: rgb(233, 235, 238);
+  --secondary-grey: rgb(221, 223, 226);
+  --secondary-dark-grey: rgb(153, 155, 159);
+  --secondary-darker-grey: rgb(117, 117, 117);
+  --secondary-deep-dark-grey: rgb(73, 75, 79);
+
+  --font-sans-serif: 'Roboto', 'Helvetica', sans-serif;
+  --font-serif: 'Libre Baskerville', 'Georgia', serif;
+  --font-fantasy: 'Material Icons', fantasy;
+  --font-monospace: 'Roboto Mono', monospace;
+
+  --size-small:  1.3rem;
+  --size-small-line: 1.5rem;
+  --size-normal: 1.4rem;
+  --size-normal-line: 1.6rem;
+  --size-middle: 1.6rem;
+  --size-middle-line: 2.2rem;
+  --size-large: 1.8rem;
+  --size-large-line: 2.7rem;
+
+  --size-h1: 2rem;
+  --size-h1-line: 2.6rem;
+  --size-h2: 1.8rem;
+  --size-h2-line: 2.4rem;
+  --size-h3: 1.7rem;
+  --size-h3-line: 2.3rem;
+  --size-h4: 1.6rem;
+  --size-h4-line: 2.2rem;
+  --size-h5: 1.5rem;
+  --size-h5-line: 2.1rem;
+  --size-h6: 1.4rem;
+  --size-h6-line: 2rem;
+
+  --size-post-h1: 5rem;
+  --size-post-h1-line: 7rem;
+  --size-post-h2: 4.5rem;
+  --size-post-h2-line: 6rem;
+  --size-post-h3: 4rem;
+  --size-post-h3-line: 5rem;
+  --size-post-h4: 3rem;
+  --size-post-h4-line: 3.5rem;
+  --size-post-h5: 2rem;
+  --size-post-h5-line: 2.5rem;
+  --size-post-h6: 1.5rem;
+  --size-post-h6-line: 2rem;
+
+  --size-letter-spacing-shrink: -0.012rem;
+  --size-letter-spacing-expand: 0.12rem;
+}

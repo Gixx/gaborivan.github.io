@@ -1,0 +1,136 @@
+title: Gábor IVÁN
+lang: en
+locale: en_US
+author: 'Gábor Iván'
+author_slug: 'gabor.ivan'
+author_avatar: 'avatar.jpg'
+author_introduction: 'Hi, my name is Gábor Iván. I am a PHP developer at <a href="https://www.westwing.com" target="_blank">Westwing</a>, but I also like to deal with the Frontend part too. Of course, in a non-professional way.'
+
+application: "Gábor Iván\'s Blog"
+timezone: 'Europe/Berlin'
+
+description: ''
+subject: ''
+copyright: 'Copyright © 2020 All rights reserved. gaborivan.de'
+keywords: ''
+
+homepage: 'https://gaborivan.de'
+
+default_categories: ['Home']
+default_tags: ['']
+default_rating: false
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'
+      page_categories: ['Home']
+      page_tags: ['']
+      page_type: 'post_list'
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+      page_type: 'post_view'
+
+source: src
+destination: docs
+
+facebook_appid: 2178081495757871
+facebook_username: ivan.gabor.80
+twitter_username: gaborivan1980
+github_username: Gixx
+linkedin_username: gaborivan
+
+future: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .jekyll-cache
+  - .sass-cache
+  - .idea
+  - node_modules
+
+env: production
+
+reversed_categories:
+  - tutorial
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+permalink: /:categories/:title
+
+autopages:
+  enabled: true
+  tags:
+    layouts:
+      - taglist.html
+    title: ''
+    permalink: /tags/:tag/
+    enabled: true
+  categories:
+    layouts:
+      - categorylist.html
+    title: ''
+    permalink: /:cat/
+    enabled: true
+  collections:
+    enabled: false
+
+jekyll-archives:
+  enabled:
+    - month
+  layouts:
+    month: 'datelist'
+  permalinks:
+    month: '/archive/:year-:month/'
+
+pagination:
+  enabled: true
+  per_page: 12
+  offset: 0
+  permalink: '/page/:num'
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+jekyll_tidy:
+  exclude: ['robots.txt']
+  compress_html: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-archives
+  - jekyll-include-cache
+  - rouge
+  - uglifier
+  - jekyll-last-modified-at
+  - jekyll-plantuml
+  - jekyll-tidy
+  - classifier-reborn
+  - jekyll-tagging-related_posts
+  - jekyll-paginate-v2
