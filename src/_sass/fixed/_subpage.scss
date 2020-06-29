@@ -1,0 +1,24 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
+.subpage {
+  .h-header {
+    height: 16.5rem;
+
+    .h-header__portrait {
+      img {
+        top: -34rem;
+      }
+    }
+  }
+
+  .m-menu__link.-downarrow {
+    display: none;
+  }
+
+  .c-content {
+    min-height: calc(100vh - 16.5rem - 6.2rem - 9.5rem);
+  }
+}
+

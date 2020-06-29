@@ -1,0 +1,51 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
+.f-footer {
+  background: $white;
+  width: 100%;
+  min-height: 9.5rem;
+  padding: 3.6rem 0 2.1rem 0;
+  border-top: 1px solid $light-grey;
+
+  .f-footer__content {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2.2rem 0 2.2rem;
+    font-weight: 400;
+
+    ul {
+      padding: 0 0 0.2rem 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    li {
+      display: block;
+      color: $darker-grey;
+      font-size: $size-text-small;
+      line-height: $size-text-normal-line;
+      font-weight: 400;
+      margin: 0 2rem;
+    }
+
+    a {
+      color: $darker-grey;
+      box-shadow: inset 0 -1px 0 $white;
+      text-decoration: none;
+      transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+      font-size: $size-text-small;
+      line-height: $size-text-normal-line;
+      font-weight: 400;
+
+      &:hover {
+        color: $black;
+        box-shadow: inset 0 0 0 $transparent, 0 3px 0 $black;
+      }
+    }
+  }
+}

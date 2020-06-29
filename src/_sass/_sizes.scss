@@ -18,21 +18,22 @@ $size-15: 1.5rem;
 $size-16: 1.6rem;
 $size-17: 1.7rem;
 
-$size-20: 2rem;
+$size-20: 2.0rem;
 $size-21: 2.1rem;
 $size-22: 2.2rem;
 $size-23: 2.3rem;
 $size-24: 2.4rem;
 $size-26: 2.6rem;
 $size-28: 2.8rem;
-
-$size-30: 3rem;
+$size-29: 2.9rem;
+$size-30: 3.0rem;
 $size-32: 3.2rem;
 $size-34: 3.4rem;
 $size-36: 3.6rem;
 $size-38: 3.8rem;
 
 $size-40: 4rem;
+$size-45: 4.5rem;
 
 $size-50: 5rem;
 $size-52: 5.2rem;
@@ -41,44 +42,30 @@ $size-60: 6rem;
 $size-64: 6.4rem;
 $size-65: 6.5rem;
 
-$size-sourcecode: $size-12;
-$size-sourcecode-line: $size-22;
-$size-sourcecode-inline: $size-26;
-
-$size-meta: $size-13;
-$size-meta-line: $size-20;
-
-$size-caption:  $size-13;
-$size-caption-line: $size-15;
-
-$size-menu-group: $size-20;
-$size-menu-group-line: $size-64;
-$size-menu-item: $size-14;
-$size-menu-item-line: $size-32;
-
 $size-header-large: $size-50;
 $size-header-large-line: $size-65;
-$size-header-medium: $size-40;
-$size-header-medium-line: $size-52;
+$size-header-medium: $size-36;
+$size-header-medium-line: $size-45;
 $size-header-normal: $size-30;
 $size-header-normal-line: $size-40;
-$size-header-small: $size-26;
-$size-header-small-line: $size-38;
-$size-header-tiny: $size-24;
-$size-header-tiny-line: $size-36;
+$size-header-small: $size-22;
+$size-header-small-line: $size-32;
+$size-header-tiny: $size-16;
+$size-header-tiny-line: $size-24;
+$size-header-micro: $size-14;
+$size-header-micro-line: $size-20;
 
 $size-text-large: $size-24;
 $size-text-large-line: $size-36;
 $size-text-medium: $size-20;
 $size-text-medium-line: $size-34;
 $size-text-normal: $size-16;
-$size-text-normal-line: $size-32;
-$size-text-small: $size-12;
-$size-text-small-line: $size-14;
+$size-text-normal-line: $size-24;
+$size-text-small: $size-14;
+$size-text-small-line: $size-16;
 $size-text-tiny: $size-12;
 $size-text-tiny-line: $size-14;
 
-$size-quote-sign: $size-60;
 
 $size-button-normal: $size-16;
 $size-button-normal-line: $size-65;
@@ -88,3 +75,5 @@ $size-letter-spacing-tiny-gap: 0.01rem;
 $size-letter-spacing-small-gap: 0.05rem;
 $size-letter-spacing-large-gap: 0.08rem;
 $size-letter-spacing-expand: 0.12rem;
+$size-letter-spacing-expand-more: 0.2rem;
+$size-letter-spacing-stretch: 0.28rem;

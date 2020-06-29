@@ -1,0 +1,75 @@
+.m-menu {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 7.2rem;
+  background-color: $white;
+  z-index: 3;
+  border-bottom: 0.1rem solid $light-grey;
+  border-top: 0.1rem solid $light-grey;
+  padding: 1.1rem 0 0 0;
+
+  .m-menu__toggle,
+  .m-menu__burger {
+    display: none;
+  }
+
+  .m-menu__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    height: 5rem;
+
+    nav {
+      display: inline-block;
+      margin-left: 2.8rem;
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin: 0 0.4rem 0 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .m-menu__link {
+      display: block;
+      font-size: $size-text-small;
+      line-height: $size-text-small-line;
+      color: $light-black;
+      padding: 1.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $darker-grey;
+      }
+    }
+
+    .m-menu__link.-current {
+      color: $darker-grey;
+    }
+
+    .m-menu__link.-downarrow {
+      width: 3.7rem;
+      height: 0 !important;
+      padding: 4.9rem 0 0 0;
+      overflow: hidden;
+      background-image: url("/assets/img/icons/arrow_downward.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 2.1rem;
+    }
+  }
+}
