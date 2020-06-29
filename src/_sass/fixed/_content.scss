@@ -1,0 +1,71 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
+.c-content {
+  width: 100%;
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 9.5rem 4.8rem 11.4rem 4.8rem;
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    margin: 0 0 6.4rem 0;
+    font-size: $size-header-micro;
+    font-weight: 800;
+    line-height: $size-header-micro-line;
+    text-transform: uppercase;
+    letter-spacing: $size-letter-spacing-expand-more;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 2.4rem 0;
+  }
+
+  hr {
+    display: block;
+    border-width: 0 0 0.1rem 0;
+    border-style: solid;
+    border-color: $darker-grey;
+    width: 2rem;
+    margin: 0 0 3.6rem 0;
+    padding: 1.2rem 0 0 0;
+  }
+
+  dl {
+    display: block;
+  }
+
+  dl::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+  dt {
+    clear: right;
+    float: left;
+    width: 20rem;
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+
+  dt + dd {
+    margin-top: 1rem;
+  }
+
+  dd {
+    float: right;
+    width: 49.9rem;
+  }
+}

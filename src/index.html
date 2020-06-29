@@ -1,19 +1,30 @@
 ---
 layout: default
-pagination:
-    enabled: true
-page_type: home
+id: 'index'
 ---
-{%- include variables.html -%}
 
-<section class="c-content__list{% if paginator.page == 1 %} --home{% endif %}">
-    {%- for post in paginator.posts -%}
-        {% include post-list-element.html post=post %}
-    {%- endfor -%}
+<h3>Short</h3>
+<p>In the beginning I was drawing on paper with pencil. I loved to do that. I was a pretty good amateur.</p>
+<p>
+    Then I wanted to share them on this "new" thing called the Internet. So I learned the basics of
+    <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.
+</p>
+<p>
+    Then I wanted to move out from the static world, and wanted to add some dynamics to my online creatures, so I
+    started to learn programming. I found my path in the Web Development. My passion became my profession.
+    Although, I didn't share any of my drawings in the Internet...
+</p>
 
-    {%- if paginator.total_pages > paginator.per_page -%}
-    <footer class="c-footer">
-        {% include pagination.html %}
-    </footer>
-    {%- endif -%}
-</section>
+<hr>
+
+<p>
+    I am living in Fürstenfeldbruck and working in München, Germany since 2014. Before I spent a dozen of years in different
+    companies in Hungary as a web developer.
+</p>
+
+<hr>
+
+<p>
+    I can show my best skills, when I find a task that fires my interest up to a level where I will focus 100% on the task and
+    recognize no time nor hunger.
+</p>

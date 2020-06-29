@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-{%- include variables.html -%}
 {%- capture title -%}
-    {%- if currentDateLabel != '' -%}
-        Archive: {{ currentDateLabel }}&nbsp;-&nbsp;
-    {%- elsif page.title != '' and page.title != site.title -%}
+    {%- if page.title != '' and page.title != site.title -%}
         {{ page.title | escape }}&nbsp;-&nbsp;
     {%- endif -%}
 
-    {%- if page.page_type == 'tag_list' and currentTagLabel != '' -%}
-        Tag: {{ currentTagLabel }}&nbsp;-&nbsp;
-    {%- endif -%}
-
-    {%- if page.page_type == 'category_list' and currentCategoryLabel != '' -%}
-        Category: {{ currentCategoryLabel }}&nbsp;-&nbsp;
-    {%- endif -%}
-
-    {{ site.title | escape }}
+    {{ site.title | escape }}&nbsp;-&nbsp;{{ site.subtitle | escape }}
 {%- endcapture -%}
 {%- capture description -%}
     {{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape | strip }}
@@ -106,55 +95,57 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,300i,400,400i,700,700i">
-        <link rel="stylesheet" href="/assets/css/site.css" media="screen and (min-width: 1025px)">
+        <link rel="stylesheet" href="/assets/css/site.css">
 
-        <script type="application/javascript" src="/assets/js/feature.min.js"></script>
         <script type="application/javascript" src="/assets/js/site.min.js"></script>
     </head>
-    <body>
+    <body class="{% if page.id != 'index' %}subpage{% endif %}">
         <header class="h-header">
-            <h1 class="h-header__title"><a href="/">{{ site.title }}</a></h1>
+            <hgroup class="h-header__title">
+                <h1><a href="/">Gábor IVÁN</a></h1>
+                <h2>Iván is my family name</h2>
+            </hgroup>
+            <figure class="h-header__portrait">
+                <img src="/assets/img/gaborivan.jpg" />
+            </figure>
         </header>
         <div class="m-menu">
+            <input class="m-menu__toggle" type="checkbox">
             <div class="m-menu__burger">
                 <span></span>
             </div>
-            <input class="m-menu__toggle" type="checkbox" />
             <div class="m-menu__content">
                 <nav>
-                    <h2 class="m-menu__title">{{ site.title }}</h2>
-                    <ul class="m-menu__navigation">
-                        <li><a class="m-menu__link -home{% if page.page_type == 'home' %} -current{% endif %}" href="/">Home</a></li>
+                    <ul>
+                        <li><a class="m-menu__link {% if page.id == 'index' %}-current{% endif %}" href="/">short</a></li>
+                        <li><a class="m-menu__link {% if page.id == 'long' %}-current{% endif %}" href="/long">long</a></li>
+                        <li><a class="m-menu__link {% if page.id == 'worstpractice' %}-current{% endif %}" href="/worstpractice">WorstPractice Project</a></li>
+                        <li><a class="m-menu__link {% if page.id == 'cv' %}-current{% endif %}" href="/cv">CV</a></li>
+                        <li><a class="m-menu__link {% if page.id == 'contact' %}-current{% endif %}" href="/contact">contact</a></li>
                     </ul>
                 </nav>
                 <nav>
-                    <h2 class="m-menu__title">Categories</h2>
-                    {% include categories.html %}
-                </nav>
-                <nav>
-                    <h2 class="m-menu__title">Tags</h2>
-                    {% include tags.html %}
-                </nav>
-                <nav>
-                    <h2 class="m-menu__title">Archive</h2>
-                    {% include dates.html %}
-                </nav>
-                <nav>
-                    {% include legal-notes.html %}
+                    <ul>
+                        <li><a class="m-menu__link -downarrow -current" href="#content" title="scroll to content">scroll to content</a></li>
+                    </ul>
                 </nav>
             </div>
-            <div class="m-menu__backdrop"></div>
         </div>
-        <main class="c-content">
-            {{ content }}
+        <main id="content" class="c-content">
+            <section>
+                <acticle>
+                    {{ content }}
+                </acticle>
+            </section>
         </main>
         <footer class="f-footer">
-            <p class="f-footer__copyright">
-                <small>Copyright © {{ 'now' | date: "%Y" }} All rights reserved. {{ site.title }}</small>
-            </p>
+            <nav class="f-footer__content">
+                <ul>
+                    <li><a href="https://github.com/Gixx/gaborivan.github.io" target="_blank" rel="noopener">Proudly hosted on GitHub</a></li>
+                    <li>Copyright © {{ 'now' | date: "%Y" }} All rights reserved.</li>
+                    <li>The other Gábor Iván's <a href="http://gaborivan.com" target="_blank" rel="noopener">website</a>.</li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>

@@ -1,7 +1,0 @@
-{%- include variables.html -%}
-<ul class="m-menu__navigation">
-    {%- for categorySlug in categorySlugs -%}
-        {%- assign categoryLabel = categoryLabels[forloop.index0] -%}
-    <li><a class="m-menu__link -{{ categorySlug }}{% if categorySlug == currentCategorySlug %} -current{% endif %}" href="/{{ categorySlug }}">{{ categoryLabel | strip }}</a></li>
-    {%- endfor -%}
-</ul>
