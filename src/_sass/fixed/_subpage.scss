@@ -7,8 +7,11 @@
     height: 16.5rem;
 
     .h-header__portrait {
+      height: 16.5rem;
+
       img {
-        top: -34rem;
+        height: 16.5rem;
+        object-position: 50% 40%;
       }
     }
   }
