@@ -1,0 +1,205 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
+.chartComponent {
+  border: 0.1rem solid gray;
+  background-color: white;
+
+  .title {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .grid {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 9rem);
+    padding: 1rem 1rem 11rem 1rem;
+    overflow: hidden;
+  }
+
+  .gridRow {
+    width: calc(100% - 5.5rem);
+    height: 0.5rem;
+    border-bottom: 0.1rem solid lightgray;
+    margin-left: 5.5rem;
+
+    span {
+      display: inline-block;
+      width: 4rem;
+      text-align: right;
+      color: lightgray;
+      line-height: 1.6rem;
+      font-size: 1.3rem;
+      font-family: Roboto, sans-serif;
+      margin-left: -4.5rem;
+    }
+  }
+
+  .gridRow.year {
+    width: calc(100% - 4rem);
+    margin-left: 4rem;
+  }
+
+  .gridRow.thisQuarter {
+    border-bottom-color: lightcoral;
+  }
+
+  .labels {
+    display: block;
+    transform: rotate(-90deg) translateX(-11rem) translateY(-3rem);
+    transform-origin: top left;
+    width: 15rem;
+    height: 0;
+    overflow: visible;
+    text-align: right;
+
+    div {
+      transform: rotate(45deg);
+      font-family: Roboto, sans-serif;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      height: 5rem;
+      transform-origin: top left;
+    }
+  }
+
+  .skill {
+    position: absolute;
+    width: 1rem;
+    z-index: 5;
+    background: lightgray;
+  }
+
+  .skill.col1 {
+    left: 8rem;
+  }
+
+  .skill.col2 {
+    left: 13rem;
+  }
+
+  .skill.col3 {
+    left: 18rem;
+  }
+
+  .skill.col4 {
+    left: 23rem;
+  }
+
+  .skill.col5 {
+    left: 28rem;
+  }
+
+  .skill.col6 {
+    left: 33rem;
+  }
+
+  .skill.col7 {
+    left: 38rem;
+  }
+
+  .skill.col8 {
+    left: 43rem;
+  }
+
+  .skill.col9 {
+    left: 48rem;
+  }
+
+  .skill.beginner-expert {
+    background: linear-gradient(to bottom, $chart-expert 0%, $chart-senior 25%, $chart-experienced 50%, $chart-junior 75%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-senior {
+    background: linear-gradient(to bottom, $chart-senior 0%, $chart-experienced 33%, $chart-junior 66%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-senior-fade {
+    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-senior 5%, $chart-experienced 40%, $chart-junior 70%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-experienced {
+    background: linear-gradient(to bottom, $chart-experienced 0%, $chart-junior 50%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-experienced-fade {
+    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-experienced 5%, $chart-junior 55%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-junior {
+    background: linear-gradient(to bottom, $chart-junior 0%, $chart-beginner 100%);
+  }
+
+  .skill.beginner-junior-fade {
+    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-junior 5%, $chart-beginner 100%);
+  }
+
+  .skill.beginner {
+    background: $chart-beginner;
+  }
+
+  .skill.beginner-fade {
+    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-beginner 85%, $chart-beginner 100%);
+  }
+
+  .legend {
+    width: 8rem;
+    padding-top: 5rem;
+    margin: 0;
+
+    span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      &::before {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.legend {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 2rem 2rem 2rem;
+
+  span {
+    display: block;
+    font-family: $font-sans;
+    margin-bottom: 0.5rem;
+
+    &::before {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 1rem;
+      content: '';
+      vertical-align: middle;
+    }
+  }
+
+  span.beginner::before {
+    background-color: $chart-beginner;
+  }
+
+  span.junior::before {
+    background-color: $chart-junior;
+  }
+
+  span.experienced::before {
+    background-color: $chart-experienced;
+  }
+
+  span.senior::before {
+    background-color: $chart-senior;
+  }
+
+  span.expert::before {
+    background-color: $chart-expert;
+  }
+}
