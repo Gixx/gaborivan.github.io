@@ -20,7 +20,7 @@ const CookieStorage = function ({utility, verbose = false})
      */
     const initialize = function()
     {
-        utility.triggerEvent({element: document, eventName: 'Component.Cookie.Ready'});
+        utility.triggerEvent({element: document, eventName: 'Component.Cookie.Ready', delay: 1});
     };
 
     /**

@@ -143,7 +143,7 @@ const FeatureToggleSwitch = function ({utility, storage, options = {}, verbose =
             }
         });
 
-        !reScan && utility.triggerEvent({element: document, eventName: 'Component.FeatureToggleSwitch.Ready'});
+        !reScan && utility.triggerEvent({element: document, eventName: 'Component.FeatureToggleSwitch.Ready', delay: 1});
     };
 
     /**

@@ -28,7 +28,7 @@ const DataStorage = function ({utility, verbose = false})
         initStorageKeys(localStorage);
         initStorageKeys(sessionStorage);
 
-        utility.triggerEvent({element: document, eventName: 'Component.DataStorage.Ready'});
+        utility.triggerEvent({element: document, eventName: 'Component.DataStorage.Ready', delay: 1});
     };
 
     /**

@@ -134,7 +134,7 @@ const LazyLoadImage = function ({utility, verbose = false})
             imageObserver.observe(element);
         });
 
-        utility.triggerEvent({element: document, eventName: 'Component.LazyLoadImage.Ready'});
+        utility.triggerEvent({element: document, eventName: 'Component.LazyLoadImage.Ready', delay: 1});
     };
 
     verbose && console.info(

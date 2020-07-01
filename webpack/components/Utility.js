@@ -50,7 +50,7 @@ const Utility = function ({verbose = false})
      */
     const initialize = function()
     {
-        triggerEvent(document, 'Component.Utility.Ready');
+        setTimeout(function() { triggerEvent(document, 'Component.Utility.Ready', null) }, 1);
     };
 
     /**
@@ -394,6 +394,49 @@ const Utility = function ({verbose = false})
          */
         getDeviceOs: function () {
             return getDeviceOs();
+        },
+
+        /**
+         * Reads the pure stylesheets and collects all the Chart styles before rendering
+         *
+         * @param {String} className
+         * @return {object}
+         */
+        readStylesheetsByClassName: function({className}) {
+            let styles = document.styleSheets;
+            let localStyles = {};
+            let classes;
+            let currentStyle = null;
+
+            for (let i = 0, styleNum = styles.length; i < styleNum; i++) {
+                try {
+                    classes = styles[i].rules || styles[i].cssRules || new CSSRuleList();
+                    for (let j = 0, ruleNum = classes.length; j < ruleNum; j ++) {
+                        currentStyle = classes[j];
+                        if (currentStyle instanceof CSSImportRule) {
+                            continue;
+                        }
+
+                        if (classes[j].selectorText.indexOf('.'+className) !== -1) {
+                            localStyles[classes[j].selectorText] = {};
+                            let customDefinitions = [];
+
+                            for (let key in classes[j].style) {
+                                if (classes[j].style.hasOwnProperty(key) && !isNaN(key)) {
+                                    customDefinitions.push(classes[j].style[key].replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); }));
+                                }
+                            }
+
+                            for (let l = 0, definitionLength = customDefinitions.length; l < definitionLength; l++) {
+                                localStyles[classes[j].selectorText][customDefinitions[l]] = classes[j].style[customDefinitions[l]];
+                            }
+                        }
+                    }
+                } catch (exception) {
+                    console.warn(exception);
+                }
+            }
+            return localStyles;
         }
     };
 };
