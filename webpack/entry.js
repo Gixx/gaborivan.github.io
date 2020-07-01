@@ -13,14 +13,6 @@ const verboseLog = true;
 let utility = new Utility({verbose: verboseLog});;
 
 document.addEventListener('Component.Utility.Ready', function () {
-    const smoothScroll = new SmoothScroll({utility: utility, verbose: verboseLog});
-
-    window.Components.utility = utility;
-    window.Components.smoothScoll = smoothScroll
-    window.Components.lazyLoadImage = new LazyLoadImage({utility: utility, verbose: verboseLog});
-    window.Components.barChart = new BarChart({utility: utility, verbose: verboseLog});
-    window.Components.collapsible = new Collapsible({utility: utility, verbose: verboseLog});
-
     let dataStorage;
 
     try {
@@ -29,21 +21,30 @@ document.addEventListener('Component.Utility.Ready', function () {
         dataStorage = new CookieStorage({utility: utility, verbose: verboseLog});
     }
 
+    window.Components.utility = utility;
     window.Components.dataStorage = dataStorage;
+    window.Components.smoothScoll = new SmoothScroll({utility: utility, verbose: verboseLog});
+    window.Components.lazyLoadImage = new LazyLoadImage({utility: utility, verbose: verboseLog});
+    window.Components.barChart = new BarChart({utility: utility, verbose: verboseLog});
+    window.Components.collapsible = new Collapsible({utility: utility, verbose: verboseLog});
+    window.Components.featureToggle = new FeatureToggleSwitch({utility: utility, storage: dataStorage, verbose: verboseLog});
 
-    // Handle dialogs after fetch them
     Promise.allSettled(fetchDialogs()).then(function(response) {
         window.Components.dialogWindow = new DialogWindow({utility: utility, verbose: verboseLog});
     });
+});
 
+/**
+ *Add smooth scroll function for content anchor link.
+ */
+document.addEventListener('Component.SmoothScroll.Ready', function() {
     const scrollToContentButton = document.querySelector('.m-menu__link.-downarrow');
 
-    // Smooth scroll handler
     if (scrollToContentButton) {
         scrollToContentButton.addEventListener('click', function(event){
             event.preventDefault();
 
-            smoothScroll.scrollToElementById({elementId: 'content', gap: 10});
+            window.Components.smoothScoll.scrollToElementById({elementId: 'content', gap: 10});
         });
     }
 });
@@ -51,7 +52,7 @@ document.addEventListener('Component.Utility.Ready', function () {
 /**
  * Open the dialog as soon as the Component is ready
  */
-document.addEventListener('Component.DialogWindow.Ready', function(){
+document.addEventListener('Component.DialogWindow.Ready', function() {
     const alterEgoDialog = window.Components.dialogWindow.getDialogByName({name: 'alterego'});
 
     if (alterEgoDialog) {

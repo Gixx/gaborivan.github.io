@@ -35,7 +35,7 @@
       border-radius: 1.6rem;
       height: 3.2rem;
       width: 6.4rem;
-      background: $dark-red;
+      background: $red;
       transition: background 0.4s ease-in;
       margin-left: 0.3rem;
     }
@@ -61,7 +61,7 @@
   }
 
   input:checked + label span:last-child {
-    background: $dark-green;
+    background: $green;
   }
 
   input:checked + label span:last-child:before {

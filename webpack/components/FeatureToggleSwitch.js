@@ -135,9 +135,11 @@ const FeatureToggleSwitch = function ({utility, storage, options = {}, verbose =
                 }
 
                 const featureName = element.dataset.feature;
+                const featureValue = 'value' in element.dataset ? element.dataset.value : 'off';
+                const state = featureValue !== 'off';
                 const toggleOptions = (typeof options[featureName] !== 'undefined')
                     ? options[featureName]
-                    : {state: false, label: 'Toggle feature "'+featureName+'" On or Off', storageKey: 'feature_'+featureName};
+                    : {state: state, label: 'Toggle feature "'+featureName+'" On or Off', storageKey: 'feature_'+featureName};
 
                 element.component = new FeatureToggleSwitchElement(element, featureName, toggleOptions);
             }
