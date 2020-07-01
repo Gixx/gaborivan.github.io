@@ -10,7 +10,7 @@ require('./components/Collapsible');
 
 window['Components'] = {};
 const verboseLog = true;
-let utility = new Utility({verbose: verboseLog});;
+let utility = new Utility({verbose: verboseLog});
 
 document.addEventListener('Component.Utility.Ready', function () {
     let dataStorage;
