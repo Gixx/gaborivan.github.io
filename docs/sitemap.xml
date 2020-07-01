@@ -2,34 +2,34 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>http://0.0.0.0:4000/dialogs/alterego</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/contact</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/cv</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/long</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/robots.txt</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/assets/css/site.css</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
     <url>
       <loc>http://0.0.0.0:4000/worstpractice</loc>
-      <lastmod>2020-07-01T09:07:01+02:00</lastmod>
+      <lastmod>2020-07-01T09:50:12+02:00</lastmod>
     </url>
   </urlset>
