@@ -1,0 +1,36 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
+.collapsible {
+  background-color: $dark-grey;
+  color: $white;
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+  &:focus {
+    box-shadow: 0 0 0.5rem 0 rgba(255,191,0,1);
+  }
+}
+
+.active, .collapsible:hover {
+  background-color: $darker-grey;
+}
+
+.collapsible__content {
+  padding:0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  p {
+    padding: 1rem;
+    margin: 0;
+  }
+}
