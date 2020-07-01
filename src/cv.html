@@ -4,4 +4,306 @@ id: 'cv'
 ---
 <h3>Curriculum Vitae</h3>
 
-<p>Hang on, content is coming soon...</p>
+<p>
+    I never liked the form of the official CVs. Too basic, no place to go in detail, and it's always a half lie.
+</p>
+<p>
+    For example let's suppose, you were an expert in Java 15 years ago, but then you career changed directions, learned
+    and used different languages.
+</p>
+<p>
+    So what would you do? Would you write into your CV that you know Java? If you do, you may lie,
+    because your knowledge is extremely outdated. If you don't, then you may loose potential opportunities, because
+    however your knowledge is old, it's not lost and you can pick up the missing parts quite easily.
+</p>
+<p>
+    The CV is a raw list without the required dimensions. It can tell about the <em>What?</em>, but it can't tell about
+    the <em>From when?</em>, the <em>Until when?</em> and the <em>How good is your knowledge?</em>
+</p>
+<p>
+    So I decided I give these dimension to my CV. To achieve this goal I use charts and colors. In each chart the vertical
+    axis gives the time range, the horizontal axis shows the different topics. These two together define the knowledge
+    bars. Each bar (from bottom to top) starts red, which means "<em>beginner</em>", and will end in other (or the same)
+    colors. I also marked with fading end the knowledge that reached a level, but it got faded out, but not lost forever.
+</p>
+
+<p>
+    The different colors mean different knowledge levels, which are:
+</p>
+<div class="legend">
+    <span class="expert">Expert</span>
+    <span class="senior">Senior</span>
+    <span class="experienced">Experienced</span>
+    <span class="junior">Junior</span>
+    <span class="beginner">Beginner</span>
+</div>
+
+<p>And of course to make it more clean and precise, I sort the different skills into groups:</p>
+
+<button class="collapsible">Programming Languages</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="1998">
+                <dt>HTML 3/4/5</dt>
+                <dd data-from="1998/Q3" data-to="today" data-skill="beginner-expert"></dd>
+
+                <dt>CSS 1/2/3</dt>
+                <dd data-from="1998/Q3" data-to="today" data-skill="beginner-expert"></dd>
+
+                <dt>JavaScript</dt>
+                <dd data-from="1999/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHP 4/5/7</dt>
+                <dd data-from="1999/Q3" data-to="today" data-skill="beginner-expert"></dd>
+
+                <dt>Ansi C</dt>
+                <dd data-from="1998/Q3" data-to="2004/Q4" data-skill="beginner-fade"></dd>
+
+                <dt>Delphi</dt>
+                <dd data-from="2000/Q3" data-to="2004/Q4" data-skill="beginner-fade"></dd>
+
+                <dt>Java</dt>
+                <dd data-from="2002/Q3" data-to="2004/Q4" data-skill="beginner-fade"></dd>
+
+                <dt>SQL</dt>
+                <dd data-from="1999/Q3" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>XML / XSLT</dt>
+                <dd data-from="2003/Q1" data-to="today" data-skill="beginner-experienced"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">Frontend Technologies</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="1999">
+                <dt>Native JavaScript</dt>
+                <dd data-from="1999/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>jQuery</dt>
+                <dd data-from="2006/Q3" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>ExtJS (v1)</dt>
+                <dd data-from="2014/Q2" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>Node JS/npm</dt>
+                <dd data-from="2015/Q2" data-to="today" data-skill="beginner-junior"></dd>
+
+                <dt>Material Degisn Lite</dt>
+                <dd data-from="2016/Q4" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>Webpack</dt>
+                <dd data-from="2014/Q2" data-to="today" data-skill="beginner-junior"></dd>
+
+                <dt>Sass</dt>
+                <dd data-from="2013/Q2" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>KnocOut JS</dt>
+                <dd data-from="2019/Q2" data-to="today" data-skill="beginner-junior"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">PHP Experience</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="2005">
+                <dt>OOP in general</dt>
+                <dd data-from="2006/Q3" data-to="today" data-skill="beginner-expert"></dd>
+
+                <dt>Wordpress</dt>
+                <dd data-from="2006/Q1" data-to="today" data-skill="beginner-experienced-fade"></dd>
+
+                <dt>Zend Framework 1</dt>
+                <dd data-from="2008/Q1" data-to="today" data-skill="beginner-expert"></dd>
+
+                <dt>Zend Framework 2</dt>
+                <dd data-from="2012/Q3" data-to="2016/Q4" data-skill="beginner-senior-fade"></dd>
+
+                <dt>Zend Expressive</dt>
+                <dd data-from="2016/Q2" data-to="today" data-skill="beginner-junior"></dd>
+
+                <dt>Yii Framework</dt>
+                <dd data-from="2014/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>Symfony Framework / components</dt>
+                <dd data-from="2014/Q1" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>S.O.L.I.D / Clean code</dt>
+                <dd data-from="2016/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PSR-7 / Middleware</dt>
+                <dd data-from="2016/Q1" data-to="today" data-skill="beginner-senior"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">DBMS Experience</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="1999">
+                <dt>Oracle SQL</dt>
+                <dd data-from="1999/Q1" data-to="2005/Q1" data-skill="beginner-junior-fade"></dd>
+
+                <dt>MySQL</dt>
+                <dd data-from="2001/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>SQLite</dt>
+                <dd data-from="2015/Q2" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>MSSQL</dt>
+                <dd data-from="2009/Q2" data-to="2011/Q3" data-skill="beginner-junior-fade"></dd>
+
+                <dt>Redis</dt>
+                <dd data-from="2011/Q3" data-to="2013/Q4" data-skill="beginner-junior-fade"></dd>
+
+                <dt>Cassandra</dt>
+                <dd data-from="2011/Q3" data-to="2013/Q4" data-skill="beginner-junior-fade"></dd>
+
+                <dt>AWS Dynamo DB</dt>
+                <dd data-from="2018/Q3" data-to="today" data-skill="beginner-junior"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">PHP Code Quality / Debug</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="2009">
+                <dt>PHP Unit</dt>
+                <dd data-from="2010/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHP Xdebug</dt>
+                <dd data-from="2009/Q2" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHPStan</dt>
+                <dd data-from="2018/Q2" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHP CS</dt>
+                <dd data-from="2016/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHP MD</dt>
+                <dd data-from="2016/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>PHP Lint</dt>
+                <dd data-from="2012/Q3" data-to="today" data-skill="beginner-senior"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">OS Knowledge and Tools</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="1998">
+                <dt>Windows</dt>
+                <dd data-from="1998/Q2" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>*nix</dt>
+                <dd data-from="1999/Q1" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>bash/SSH/awk/etc.</dt>
+                <dd data-from="1999/Q1" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>CVS/SVN/Git</dt>
+                <dd data-from="2005/Q3" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>CD/CI (Jenkins...)</dt>
+                <dd data-from="2009/Q2" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>VM/Vagrant/Docker</dt>
+                <dd data-from="2010/Q1" data-to="today" data-skill="beginner-experienced"></dd>
+
+                <dt>AWS/Cloud/K8s</dt>
+                <dd data-from="2016/Q3" data-to="today" data-skill="beginner"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
+
+<button class="collapsible">IDEs / Editors</button>
+<div class="collapsible__content">
+    <div class="chartComponent">
+        <div class="grid">
+            <dl class="chart-dataset" data-rangefrom="2000">
+                <dt>Notepad++/PSPad</dt>
+                <dd data-from="2000/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>Eclipse</dt>
+                <dd data-from="2004/Q2" data-to="2011/Q4" data-skill="beginner-senior-fade"></dd>
+
+                <dt>Netbeans</dt>
+                <dd data-from="2010/Q1" data-to="2014/Q2" data-skill="beginner-senior-fade"></dd>
+
+                <dt>PHPStorm</dt>
+                <dd data-from="2014/Q1" data-to="today" data-skill="beginner-senior"></dd>
+
+                <dt>Atom/Sublime/Emacs</dt>
+                <dd data-from="2013/Q4" data-to="2017/Q3" data-skill="beginner-fade"></dd>
+
+                <dt>vim</dt>
+                <dd data-from="2016/Q3" data-to="today" data-skill="beginner-junior"></dd>
+            </dl>
+        </div>
+        <div class="legend">
+            <span class="expert">Expert</span>
+            <span class="senior">Senior</span>
+            <span class="experienced">Experienced</span>
+            <span class="junior">Junior</span>
+            <span class="beginner">Beginner</span>
+        </div>
+    </div>
+</div>
