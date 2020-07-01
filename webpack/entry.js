@@ -76,6 +76,15 @@ function fetchDialogs()
         'alterego'
     ];
 
+    const wrapperId = 'dialogWrapper_'+Math.ceil(Math.random()*1000000000);
+    let dialogWrapper = document.getElementById(wrapperId);
+
+    if (!dialogWrapper) {
+        dialogWrapper = document.createElement('div');
+        dialogWrapper.setAttribute('id', wrapperId);
+        document.body.appendChild(dialogWrapper);
+    }
+
     for (let i = 0, num = dialogDisplayOnceForSession.length; i < num; i++) {
         if (dataStorage.get({key: dialogDisplayOnceForSession[i]}) !== 'On') {
             promises.push(utility.fetch({
@@ -84,12 +93,8 @@ function fetchDialogs()
                 enctype: 'text/html',
                 successCallback: function (response) {
                     return response.text().then(function (data) {
-                        const div = document.createElement('div');
-                        div.setAttribute('class', 'dialog')
-                        div.setAttribute('id', 'dialog-'+dialogDisplayOnceForSession[i])
-                        div.setAttribute('data-name', dialogDisplayOnceForSession[i])
-                        div.innerHTML = data;
-                        document.body.appendChild(div);
+
+                        dialogWrapper.innerHTML += data;
 
                         return new Promise((resolve, reject) => {
                             resolve('done');

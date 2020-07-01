@@ -22,9 +22,9 @@ const BarChart = function ({utility, verbose = false})
     }
 
     /** @type {object} */
-    const chartStyles = utility.readStylesheetsByClassName({className: 'chartComponent'});
+    const chartStyles = utility.readStylesheetsByClassName({className: 'BarChart'});
 
-    if (!chartStyles['.chartComponent .grid']) {
+    if (!chartStyles['.BarChart .grid']) {
         throw new Error('Cannot read CSS data for Bar Chart');
     }
 
@@ -37,7 +37,7 @@ const BarChart = function ({utility, verbose = false})
      */
     function getOffset(dateInfo, rangeFrom)
     {
-        let startOffset = chartStyles['.chartComponent .grid'].paddingBottom;
+        let startOffset = chartStyles['.BarChart .grid'].paddingBottom;
 
         if (startOffset.indexOf('px') !== -1)
             startOffset = parseInt(startOffset.replace(/px/, ''));
@@ -45,7 +45,7 @@ const BarChart = function ({utility, verbose = false})
             startOffset = parseInt((parseFloat(startOffset.replace(/rem/, '')) * 10.0) + '');
         }
 
-        let rowHeight = chartStyles['.chartComponent .gridRow'].height;
+        let rowHeight = chartStyles['.BarChart .gridRow'].height;
 
         if (rowHeight.indexOf('px') !== -1)
             rowHeight = parseInt(rowHeight.replace(/px/, ''));
@@ -152,7 +152,7 @@ const BarChart = function ({utility, verbose = false})
             'color:#599bd6;font-style:italic'
         );
 
-        chartWrappers = document.querySelectorAll('.chartComponent .grid');
+        chartWrappers = document.querySelectorAll('.BarChart .grid');
 
         chartWrappers.forEach(function (element) {
             if (typeof element.component === 'undefined') {

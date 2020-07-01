@@ -2,28 +2,46 @@
 @import "../sizes";
 @import "../fonts";
 
-.collapsible {
+.Collapsible {
+  border: 1px solid  $darker-grey;
   background-color: $dark-grey;
   color: $white;
   cursor: pointer;
   padding: 1.8rem;
   width: 100%;
-  border: none;
   text-align: left;
   outline: none;
   font-size: 1.5rem;
   margin-top: 1rem;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+  &::after {
+    content: '▼';
+    display: inline-block;
+    float: right;
+  }
 
   &:focus {
     box-shadow: 0 0 0.5rem 0 rgba(255,191,0,1);
   }
+
+  &:hover {
+    background: $white;
+    color: $light-black;
+    cursor: pointer;
+  }
+
+  &.active {
+    background: $darker-grey;
+    color: $white;
+
+    &::after {
+      content: '▲';
+    }
+  }
 }
 
-.active, .collapsible:hover {
-  background-color: $darker-grey;
-}
-
-.collapsible__content {
+.Collapsible__content {
   padding:0;
   max-height: 0;
   overflow: hidden;

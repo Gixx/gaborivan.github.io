@@ -169,7 +169,7 @@ const DialogWindow = function ({utility, verbose = false})
             'color:#599bd6;font-style:italic'
         );
 
-        dialogElements = document.querySelectorAll('div.dialog');
+        dialogElements = document.querySelectorAll('.DialogWindow');
         dialogElements.forEach(function (element) {
             if (!element.hasAttribute('id')) {
                 element.setAttribute('id', 'dialog-' + (idCounter++));

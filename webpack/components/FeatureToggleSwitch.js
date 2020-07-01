@@ -125,7 +125,7 @@ const FeatureToggleSwitch = function ({utility, storage, options = {}, verbose =
             'color:#599bd6;font-style:italic'
         );
 
-        featureToggleSwitches = document.querySelectorAll('div[data-feature]');
+        featureToggleSwitches = document.querySelectorAll('.FeatureToggle[data-feature]');
 
         featureToggleSwitches.forEach(function (element) {
             if (typeof element.component === 'undefined') {
