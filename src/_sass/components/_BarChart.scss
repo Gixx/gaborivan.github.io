@@ -18,29 +18,33 @@
     display: inline-block;
     width: calc(100% - 9rem);
     padding: 1rem 1rem 11rem 1rem;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
 
   .gridRow {
-    width: calc(100% - 5.5rem);
+    width: 48rem;
     height: 0.5rem;
     border-bottom: 0.1rem solid lightgray;
     margin-left: 5.5rem;
 
     span {
       display: inline-block;
-      width: 4rem;
+      width: 6rem;
       text-align: right;
       color: lightgray;
       line-height: 1.6rem;
       font-size: 1.3rem;
       font-family: Roboto, sans-serif;
       margin-left: -4.5rem;
+      padding-right: 2rem;
+      background: $white;
+      top: 0.5rem;
     }
   }
 
   .gridRow.year {
-    width: calc(100% - 4rem);
+    width: 49.5rem;
     margin-left: 4rem;
   }
 
