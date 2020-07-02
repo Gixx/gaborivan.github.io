@@ -91,3 +91,50 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .DialogWindow {
+    .d-tab {
+      top: initial;
+      left: 0;
+      width: 100%;
+      transform: none;
+      border-radius: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .DialogWindow {
+    .d-header {
+      height: auto;
+      padding: 2rem;
+    }
+
+    .d-header__title {
+      font-size: $size-header-medium;
+      line-height: $size-header-medium-line;
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .DialogWindow {
+    .d-header__title {
+      font-size: $size-header-small;
+      line-height: $size-header-small-line;
+    }
+
+    .d-body {
+      height: 30rem;
+    }
+  }
+}
+
+@media only screen and (max-height: 680px) and (orientation: landscape) {
+  .d-tab {
+    max-height: 75%;
+    overflow-y: scroll;
+  }
+}

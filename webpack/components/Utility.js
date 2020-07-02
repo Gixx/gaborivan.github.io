@@ -413,7 +413,7 @@ const Utility = function ({verbose = false})
                     classes = styles[i].rules || styles[i].cssRules || new CSSRuleList();
                     for (let j = 0, ruleNum = classes.length; j < ruleNum; j ++) {
                         currentStyle = classes[j];
-                        if (currentStyle instanceof CSSImportRule) {
+                        if (currentStyle instanceof CSSImportRule || currentStyle instanceof CSSMediaRule) {
                             continue;
                         }
 
