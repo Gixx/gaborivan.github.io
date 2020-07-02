@@ -82,3 +82,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .h-header {
+    height: 75vh;
+
+    .h-header__portrait {
+      height: 75vh;
+
+      img {
+        height: 75vh;
+      }
+    }
+
+    .h-header__title {
+      padding: 0 0 5.4rem 2.15rem;
+
+      h1 {
+        font-size: $size-header-small;
+        letter-spacing: $size-letter-spacing-expand-more;
+        line-height: $size-header-small-line;
+      }
+
+      h2 {
+        font-size: $size-header-nano;
+        line-height: $size-header-nano-line;
+      }
+    }
+  }
+}

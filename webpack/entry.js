@@ -87,7 +87,7 @@ function fetchDialogs()
     }
 
     for (let i = 0, num = dialogDisplayOnceForSession.length; i < num; i++) {
-        if (dataStorage.get({key: dialogDisplayOnceForSession[i]}) !== 'Ony') {
+        if (dataStorage.get({key: dialogDisplayOnceForSession[i]}) !== 'On') {
             promises.push(utility.fetch({
                 url: '/dialogs/'+dialogDisplayOnceForSession[i]+'.html',
                 method: 'GET',

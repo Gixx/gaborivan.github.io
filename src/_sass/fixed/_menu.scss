@@ -1,3 +1,7 @@
+@import "../colors";
+@import "../sizes";
+@import "../fonts";
+
 .m-menu {
   position: sticky;
   top: 0;
@@ -70,6 +74,131 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 2.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .m-menu {
+    height: auto;
+    min-height: 5.4rem;
+
+    .m-menu__burger {
+      display: block;
+      position: static;
+      margin: 0 auto;
+      z-index: 1;
+      width: 6rem;
+      height: 2.1rem;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.25rem 0;
+      border-radius: 0.5rem;
+
+      &::after {
+        display: inline-block;
+        margin-left: 2rem;
+        content: 'Menu';
+        font-size: $size-text-small;
+        line-height: $size-text-small-line;
+        font-weight: 800;
+      }
+
+      span,
+      span::before,
+      span::after {
+        content: '';
+        display: block;
+        width: 1.2rem;
+        height: 0.2rem;
+        position: absolute;
+        margin-top: 1rem;
+        background: $light-black;
+        border-radius: 0.3rem;
+      }
+
+      span::before {
+        margin-top: -0.4rem;
+      }
+
+      span::after {
+        margin-top: 0.4rem;
+      }
+    }
+
+    .m-menu__toggle {
+      position: absolute;
+      display: block;
+      width: 5.2rem;
+      height: 5.2rem;
+      top: 0;
+      left: calc(50% - 3rem);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: all;
+      z-index: 2;
+    }
+
+    .m-menu__toggle:checked ~ .m-menu__content {
+      display: block;
+    }
+
+    .m-menu__toggle:checked ~ .m-menu__burger {
+      span {
+        background: $transparent;
+      }
+
+      span::before {
+        transform: rotate(-45deg);
+        margin-top: 0;
+        height: 0.3rem;
+      }
+
+      span::after {
+        transform: rotate(45deg);
+        margin-top: 0;
+        height: 0.3rem;
+      }
+    }
+
+    .m-menu__content {
+      display: none;
+      height: auto;
+
+      nav {
+        display: block;
+        margin: 2rem 0 0 0;
+        padding: 0;
+
+        ul {
+          display: block;
+          padding: 1.2rem 2.7rem;
+          border-top: 0.1rem solid $light-grey;
+
+          li {
+            display: block;
+            border-bottom: 0.1rem solid $light-grey;
+            height: 4.3rem;
+
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+      }
+
+      .m-menu__link {
+        padding: 0.9rem 0;
+        font-size: $size-text-normal;
+        font-weight: 600;
+        line-height: $size-text-normal-line;
+      }
+
+      nav {
+        &:last-child {
+          display: none;
+        }
+      }
     }
   }
 }
