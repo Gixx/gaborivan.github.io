@@ -82,5 +82,29 @@
       font-size: $size-text-medium;
       line-height: $size-text-medium-line;
     }
+
+    dl {
+      display: block;
+    }
+
+    dl::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    dt {
+      display: block;
+      float: none;
+      width: 100%;
+      font-weight: 800;
+      margin-top: 1rem;
+    }
+
+    dd {
+      margin-top: 1rem;
+      float: none;
+      width: 100%;
+    }
   }
 }
