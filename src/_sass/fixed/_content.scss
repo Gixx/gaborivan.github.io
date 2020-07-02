@@ -72,6 +72,15 @@
 
 @media only screen and (max-width: 767px) {
   .c-content {
+    padding: 6.3rem 3.6rem 3.6rem 3.6rem;
 
+    h3 {
+      margin: 0 0 8rem 0;
+    }
+
+    p {
+      font-size: $size-text-medium;
+      line-height: $size-text-medium-line;
+    }
   }
 }
