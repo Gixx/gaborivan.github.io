@@ -49,3 +49,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .f-footer {
+    .f-footer__content {
+      ul {
+        justify-content: space-around;
+      }
+    }
+  }
+}
