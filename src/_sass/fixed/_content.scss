@@ -68,6 +68,59 @@
     float: right;
     width: 49.9rem;
   }
+
+  blockquote {
+    padding: 1rem 5rem;
+
+
+    p {
+      font-family: $font-serif;
+      font-weight: 400;
+      font-style: italic;
+      text-align: justify;
+      font-size: $size-text-medium;
+      line-height: $size-text-medium-line;
+      min-height: 3rem;
+      padding: 1rem;
+    }
+
+    span {
+      display: block;
+      text-align: right;
+      font-size: $size-text-small;
+      line-height: $size-text-small-line;
+      font-style: italic;
+
+      &::before,
+      &::after {
+        content: ' -- ';
+      }
+    }
+
+    &::before {
+      font-family: $font-serif;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      display: block;
+      content: "“";
+      color: $light-black;
+      font-weight: 700;
+      font-size: $size-quote-sign;
+    }
+
+    &::after {
+      font-family: $font-serif;
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      display: block;
+      content: "”";
+      color: $light-black;
+      font-weight: 700;
+      font-size: $size-quote-sign;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
