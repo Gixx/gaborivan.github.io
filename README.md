@@ -4,5 +4,5 @@ This is the Jekyll and architecture source code of the [gaborivan.de](https://ga
 
 ## 1. License
 
-The writings under the [_posts](_posts) folder and the image assets are protected by copyright, the rest is free for learning and using.
+The content of the `.html` files in the [src](src) folder and the image assets are protected by copyright, the rest is free for learning and using.
 
