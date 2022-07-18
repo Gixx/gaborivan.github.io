@@ -42,7 +42,7 @@ const Collapsible = function ({utility, verbose = false})
      */
     const CollapsibleElement = function (HTMLElement)
     {
-        if (!HTMLElement.nextElementSibling.classList.contains('Collapsible__content')) {
+        if (!HTMLElement.nextElementSibling?.classList.contains('Collapsible__content')) {
             return false;
         }
 
