@@ -17,8 +17,9 @@ module.exports = {
         minimize: true,
         minimizer: [
             new TerserPlugin({
-                cache: true,
-                sourceMap: false,
+                terserOptions: {
+                    sourceMap: false,
+                },
                 extractComments: true,
                 test: /\.js(\?.*)?$/i,
             }),

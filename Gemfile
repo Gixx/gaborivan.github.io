@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.8'
+gem 'jekyll', '~> 4.2'
 gem 'liquid-c'
 
 group :jekyll_plugins do
@@ -15,7 +15,8 @@ group :jekyll_plugins do
     gem 'jekyll-tidy'
     gem 'classifier-reborn'
     gem 'jekyll-tagging-related_posts'
-    gem 'jekyll-paginate-v2', '2.0.0'
+    gem 'jekyll-paginate-v2'
+    gem 'webrick'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

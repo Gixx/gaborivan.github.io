@@ -1,19 +1,9 @@
-version: '3.7'
 services:
-
-  jekyll:
-    container_name: 'jekyll-gi'
-    image: 'jekyll/jekyll:3.8'
-    ports:
-      - '4001:4000'
-    volumes:
-      - './:/srv/jekyll'
-    command: tail -f /dev/null
-
-  webpack:
+  alpine:
+    container_name: 'gabor'
     build:
       context: .
-      dockerfile: docker.webpack
-    container_name: 'webpack-gi'
+    ports:
+      - '4001:4000'
     volumes:
       - './:/app'
