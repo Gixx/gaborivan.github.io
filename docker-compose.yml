@@ -1,6 +1,6 @@
 services:
-  alpine:
-    container_name: 'gabor'
+  gaborivan:
+    container_name: 'gaborivan'
     build:
       context: .
     ports:

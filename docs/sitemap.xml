@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-      <loc>/dialogs/alterego</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/dialogs/alterego</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/contact</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/contact</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/long</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/long</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/robots.txt</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/robots.txt</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/assets/css/site.css</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/assets/css/site.css</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/skills</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/skills</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/worstpractice</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/worstpractice</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
     <url>
-      <loc>/assets/css/site.css.map</loc>
-      <lastmod>2022-10-06T10:57:50+00:00</lastmod>
+      <loc>http://0.0.0.0:4000/assets/css/site.css.map</loc>
+      <lastmod>2023-02-01T07:11:45+00:00</lastmod>
     </url>
   </urlset>

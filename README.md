@@ -10,7 +10,7 @@ The content of the `.html` files in the [src](src) folder and the image assets a
 Host commands
 ```
 docker-compose up -d
-docker exec -it -u dev gabor bash
+docker exec -it -u dev gaborivan bash
 docker-compose stop
 docker-compose down -v
 ```
