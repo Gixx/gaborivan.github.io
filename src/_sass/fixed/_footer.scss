@@ -1,13 +1,13 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../fonts";
+@use "../sizes";
 
 .f-footer {
-  background: $white;
+  background: colors.$white;
   width: 100%;
   min-height: 9.5rem;
   padding: 3.6rem 0 2.1rem 0;
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid colors.$light-grey;
 
   .f-footer__content {
     max-width: 100rem;
@@ -26,25 +26,25 @@
 
     li {
       display: block;
-      color: $darker-grey;
-      font-size: $size-text-small;
-      line-height: $size-text-normal-line;
+      color: colors.$darker-grey;
+      font-size: sizes.$size-text-small;
+      line-height: sizes.$size-text-normal-line;
       font-weight: 400;
       margin: 0 2rem;
     }
 
     a {
-      color: $darker-grey;
-      box-shadow: inset 0 -1px 0 $white;
+      color: colors.$darker-grey;
+      box-shadow: inset 0 -1px 0 colors.$white;
       text-decoration: none;
       transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
-      font-size: $size-text-small;
-      line-height: $size-text-normal-line;
+      font-size: sizes.$size-text-small;
+      line-height: sizes.$size-text-normal-line;
       font-weight: 400;
 
       &:hover {
-        color: $black;
-        box-shadow: inset 0 0 0 $transparent, 0 3px 0 $black;
+        color: colors.$black;
+        box-shadow: inset 0 0 0 colors.$transparent, 0 3px 0 colors.$black;
       }
     }
   }

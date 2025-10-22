@@ -1,11 +1,11 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../sizes";
+@use "../fonts";
 
 .Collapsible {
-  border: 1px solid  $darker-grey;
-  background-color: $dark-grey;
-  color: $white;
+  border: 1px solid  colors.$darker-grey;
+  background-color: colors.$dark-grey;
+  color: colors.$white;
   cursor: pointer;
   padding: 1.8rem;
   width: 100%;
@@ -26,14 +26,14 @@
   }
 
   &:hover {
-    background: $white;
-    color: $light-black;
+    background: colors.$white;
+    color: colors.$light-black;
     cursor: pointer;
   }
 
   &.active {
-    background: $darker-grey;
-    color: $white;
+    background: colors.$darker-grey;
+    color: colors.$white;
 
     &::after {
       content: '▲';

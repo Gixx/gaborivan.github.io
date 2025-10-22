@@ -1,13 +1,13 @@
 ---
 ---
 
-@import "fixed/defaults";
-@import "fixed/header";
-@import "fixed/menu";
-@import "fixed/content";
-@import "fixed/footer";
-@import "fixed/subpage";
-@import "components/DialogWindow";
-@import "components/BarChart";
-@import "components/Collapsible";
-@import "components/FeatureToggle";
+@use "fixed/defaults";
+@use "fixed/header";
+@use "fixed/menu";
+@use "fixed/content";
+@use "fixed/footer";
+@use "fixed/subpage";
+@use "components/DialogWindow";
+@use "components/BarChart";
+@use "components/Collapsible";
+@use "components/FeatureToggle";

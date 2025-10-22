@@ -1,21 +1,21 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../fonts";
+@use "../sizes";
 
 ::selection {
-  background-color: $black;
-  color: $grey;
+  background-color: colors.$black;
+  color: colors.$grey;
 }
 
 ::-moz-selection {
-  background-color: $black;
-  color: $grey;
+  background-color: colors.$black;
+  color: colors.$grey;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
   position: relative;
-  font-family: $font-sans;
+  font-family: fonts.$font-sans;
   cursor: default;
   margin: 0;
 }
@@ -26,8 +26,8 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-size: $size-text-base;
-  background: $white;
+  font-size: sizes.$size-text-base;
+  background: colors.$white;
 }
 
 body {
@@ -35,13 +35,13 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  color: $light-black;
-  background-color: $transparent;
+  color: colors.$light-black;
+  background-color: colors.$transparent;
   font-weight: 400;
   font-style: normal;
-  font-size: $size-text-normal;
-  line-height: $size-text-normal-line;
-  letter-spacing: $size-letter-spacing-tiny-gap;
+  font-size: sizes.$size-text-normal;
+  line-height: sizes.$size-text-normal-line;
+  letter-spacing: sizes.$size-letter-spacing-tiny-gap;
   font-variant-ligatures: no-common-ligatures;
   font-feature-settings: "kern", "liga" 0, "clig" 0;
   scroll-behavior: smooth;
@@ -50,8 +50,8 @@ body {
 
 a {
   cursor: pointer !important;
-  color: $light-black;
-  text-decoration: $deep-dark-grey dotted underline;
+  color: colors.$light-black;
+  text-decoration: colors.$deep-dark-grey dotted underline;
 }
 
 a:hover, a:active {
@@ -89,7 +89,7 @@ p, li {
 }
 
 blockquote p {
-  font-family: $font-serif;
+  font-family: fonts.$font-serif;
   font-weight: 400;
   font-style: italic;
   text-align: justify;
@@ -104,19 +104,19 @@ strong {
 }
 
 em {
-  font-family: $font-serif;
+  font-family: fonts.$font-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 del {
   font-weight: 300;
-  color: $light-black;
-  text-decoration: line-through solid $dark-grey;
+  color: colors.$light-black;
+  text-decoration: line-through solid colors.$dark-grey;
 }
 
 ins {
-  color: $black;
-  text-decoration: underline dashed $dark-grey;
+  color: colors.$black;
+  text-decoration: underline dashed colors.$dark-grey;
   font-style: oblique;
 }

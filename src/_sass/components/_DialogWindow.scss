@@ -1,6 +1,6 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../sizes";
+@use "../fonts";
 
 .DialogWindow {
   display: none;
@@ -10,7 +10,7 @@
   border: none;
   width: 100%;
   height: 100%;
-  background: $white-75;
+  background: colors.$white-75;
   z-index: 1000;
 
   .d-tab {
@@ -20,9 +20,9 @@
     left: 50%;
     width: 70rem;
     height: 50rem;
-    background: $white;
+    background: colors.$white;
     transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0 0 1rem 0 $black-75;
+    box-shadow: 0 0 1rem 0 colors.$black-75;
     border-radius: 0.5rem;
 
     &.-active {
@@ -36,8 +36,8 @@
   }
 
   .d-header__title {
-    font-size: $size-header-large;
-    line-height: $size-header-large-line;
+    font-size: sizes.$size-header-large;
+    line-height: sizes.$size-header-large-line;
     text-align: center;
     margin: 0;
   }
@@ -54,8 +54,8 @@
 
     h4 {
       text-align: center;
-      font-size: $size-header-small;
-      line-height: $size-header-small-line;
+      font-size: sizes.$size-header-small;
+      line-height: sizes.$size-header-small-line;
       margin: 1.3rem;
     }
   }
@@ -68,25 +68,25 @@
     outline: none;
 
     button {
-      border: 1px solid $white;
+      border: 1px solid colors.$white;
       width: 20rem;
       padding: 0;
       margin: 0;
-      background: $dark-grey;
+      background: colors.$dark-grey;
       text-transform: uppercase;
       text-align: center;
       font-weight: bold;
-      font-size: $size-button-normal;
-      line-height: $size-button-normal-line;
+      font-size: sizes.$size-button-normal;
+      line-height: sizes.$size-button-normal-line;
       outline: none;
-      color: $white;
+      color: colors.$white;
       transition: color 0.3s, background-color 0.3s, border-color 0.3s;
     }
 
     button:hover {
-      background: $white;
-      color: $light-black;
-      border-color: $darker-grey;
+      background: colors.$white;
+      color: colors.$light-black;
+      border-color: colors.$darker-grey;
       cursor: pointer;
     }
   }
@@ -113,8 +113,8 @@
     }
 
     .d-header__title {
-      font-size: $size-header-medium;
-      line-height: $size-header-medium-line;
+      font-size: sizes.$size-header-medium;
+      line-height: sizes.$size-header-medium-line;
     }
   }
 }
@@ -122,8 +122,8 @@
 @media only screen and (max-width: 490px) {
   .DialogWindow {
     .d-header__title {
-      font-size: $size-header-small;
-      line-height: $size-header-small-line;
+      font-size: sizes.$size-header-small;
+      line-height: sizes.$size-header-small-line;
     }
 
     .d-body {

@@ -1,6 +1,6 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../fonts";
+@use "../sizes";
 
 .m-menu {
   position: sticky;
@@ -8,10 +8,10 @@
   width: 100%;
   margin: 0 auto;
   height: 7.2rem;
-  background-color: $white;
+  background-color: colors.$white;
   z-index: 30;
-  border-bottom: 0.1rem solid $light-grey;
-  border-top: 0.1rem solid $light-grey;
+  border-bottom: 0.1rem solid colors.$light-grey;
+  border-top: 0.1rem solid colors.$light-grey;
   padding: 1.1rem 0 0 0;
 
   .m-menu__toggle,
@@ -48,21 +48,21 @@
 
     .m-menu__link {
       display: block;
-      font-size: $size-text-small;
-      line-height: $size-text-small-line;
-      color: $light-black;
+      font-size: sizes.$size-text-small;
+      line-height: sizes.$size-text-small-line;
+      color: colors.$light-black;
       padding: 1.7rem;
       font-weight: 600;
       text-decoration: none;
       transition: color 0.2s;
 
       &:hover {
-        color: $darker-grey;
+        color: colors.$darker-grey;
       }
     }
 
     .m-menu__link.-current {
-      color: $darker-grey;
+      color: colors.$darker-grey;
     }
 
     .m-menu__link.-downarrow {
@@ -99,8 +99,8 @@
         display: inline-block;
         margin-left: 2rem;
         content: 'Menu';
-        font-size: $size-text-small;
-        line-height: $size-text-small-line;
+        font-size: sizes.$size-text-small;
+        line-height: sizes.$size-text-small-line;
         font-weight: 800;
       }
 
@@ -113,7 +113,7 @@
         height: 0.2rem;
         position: absolute;
         margin-top: 1rem;
-        background: $light-black;
+        background: colors.$light-black;
         border-radius: 0.3rem;
       }
 
@@ -145,7 +145,7 @@
 
     .m-menu__toggle:checked ~ .m-menu__burger {
       span {
-        background: $transparent;
+        background: colors.$transparent;
       }
 
       span::before {
@@ -173,11 +173,11 @@
         ul {
           display: block;
           padding: 1.2rem 2.7rem;
-          border-top: 0.1rem solid $light-grey;
+          border-top: 0.1rem solid colors.$light-grey;
 
           li {
             display: block;
-            border-bottom: 0.1rem solid $light-grey;
+            border-bottom: 0.1rem solid colors.$light-grey;
             height: 4.3rem;
 
             &:last-child {
@@ -189,9 +189,9 @@
 
       .m-menu__link {
         padding: 0.9rem 0;
-        font-size: $size-text-normal;
+        font-size: sizes.$size-text-normal;
         font-weight: 600;
-        line-height: $size-text-normal-line;
+        line-height: sizes.$size-text-normal-line;
       }
 
       nav {

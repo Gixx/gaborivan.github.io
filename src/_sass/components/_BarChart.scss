@@ -1,10 +1,10 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../sizes";
+@use "../fonts";
 
 .BarChart {
   border: 0.1rem solid gray;
-  background-color: white;
+  background-color: colors.$white;
 
   .title {
     font-family: Roboto, sans-serif;
@@ -25,7 +25,7 @@
   .gridRow {
     width: 48rem;
     height: 0.5rem;
-    border-bottom: 0.1rem solid lightgray;
+    border-bottom: 0.1rem solid colors.$light-grey;
     margin-left: 5.5rem;
 
     span {
@@ -38,7 +38,7 @@
       font-family: Roboto, sans-serif;
       margin-left: -4.5rem;
       padding-right: 2rem;
-      background: $white;
+      background: colors.$white;
       top: 0.5rem;
     }
   }
@@ -75,7 +75,7 @@
     position: absolute;
     width: 1rem;
     z-index: 5;
-    background: lightgray;
+    background: colors.$light-grey;
   }
 
   .skill.col1 {
@@ -115,39 +115,39 @@
   }
 
   .skill.beginner-expert {
-    background: linear-gradient(to bottom, $chart-expert 0%, $chart-senior 25%, $chart-experienced 50%, $chart-junior 75%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-expert 0%, colors.$chart-senior 25%, colors.$chart-experienced 50%, colors.$chart-junior 75%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-senior {
-    background: linear-gradient(to bottom, $chart-senior 0%, $chart-experienced 33%, $chart-junior 66%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-senior 0%, colors.$chart-experienced 33%, colors.$chart-junior 66%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-senior-fade {
-    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-senior 5%, $chart-experienced 40%, $chart-junior 70%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-fadeout 0%, colors.$chart-senior 5%, colors.$chart-experienced 40%, colors.$chart-junior 70%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-experienced {
-    background: linear-gradient(to bottom, $chart-experienced 0%, $chart-junior 50%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-experienced 0%, colors.$chart-junior 50%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-experienced-fade {
-    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-experienced 5%, $chart-junior 55%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-fadeout 0%, colors.$chart-experienced 5%, colors.$chart-junior 55%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-junior {
-    background: linear-gradient(to bottom, $chart-junior 0%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-junior 0%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner-junior-fade {
-    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-junior 5%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-fadeout 0%, colors.$chart-junior 5%, colors.$chart-beginner 100%);
   }
 
   .skill.beginner {
-    background: $chart-beginner;
+    background: colors.$chart-beginner;
   }
 
   .skill.beginner-fade {
-    background: linear-gradient(to bottom, $chart-fadeout 0%, $chart-beginner 85%, $chart-beginner 100%);
+    background: linear-gradient(to bottom, colors.$chart-fadeout 0%, colors.$chart-beginner 85%, colors.$chart-beginner 100%);
   }
 
   .legend {
@@ -174,7 +174,7 @@
 
   span {
     display: block;
-    font-family: $font-sans;
+    font-family: fonts.$font-sans;
     margin-bottom: 0.5rem;
 
     &::before {
@@ -188,22 +188,22 @@
   }
 
   span.beginner::before {
-    background-color: $chart-beginner;
+    background-color: colors.$chart-beginner;
   }
 
   span.junior::before {
-    background-color: $chart-junior;
+    background-color: colors.$chart-junior;
   }
 
   span.experienced::before {
-    background-color: $chart-experienced;
+    background-color: colors.$chart-experienced;
   }
 
   span.senior::before {
-    background-color: $chart-senior;
+    background-color: colors.$chart-senior;
   }
 
   span.expert::before {
-    background-color: $chart-expert;
+    background-color: colors.$chart-expert;
   }
 }

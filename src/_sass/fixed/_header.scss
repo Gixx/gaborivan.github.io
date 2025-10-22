@@ -1,6 +1,6 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../fonts";
+@use "../sizes";
 
 .h-header {
   position: relative;
@@ -53,14 +53,14 @@
       max-width: 100rem;
       margin: 0 auto;
       padding-left: 4.8rem;
-      font-size: $size-header-medium;
+      font-size: sizes.$size-header-medium;
       font-weight: 800;
-      letter-spacing: $size-letter-spacing-stretch;
-      line-height: $size-header-medium-line;
+      letter-spacing: sizes.$size-letter-spacing-stretch;
+      line-height: sizes.$size-header-medium-line;
       text-transform: uppercase;
 
       a{
-        color: $white;
+        color: colors.$white;
         text-decoration: none;
         transition: opacity 0.2s;
 
@@ -75,10 +75,10 @@
       max-width: 100rem;
       margin: 0 auto;
       padding-left: 4.7rem;
-      color: $white;
-      font-size: $size-header-tiny;
+      color: colors.$white;
+      font-size: sizes.$size-header-tiny;
       font-weight: 400;
-      line-height: $size-header-tiny-line;
+      line-height: sizes.$size-header-tiny-line;
     }
   }
 }
@@ -99,14 +99,14 @@
       padding: 0 0 5.4rem 2.15rem;
 
       h1 {
-        font-size: $size-header-small;
-        letter-spacing: $size-letter-spacing-expand-more;
-        line-height: $size-header-small-line;
+        font-size: sizes.$size-header-small;
+        letter-spacing: sizes.$size-letter-spacing-expand-more;
+        line-height: sizes.$size-header-small-line;
       }
 
       h2 {
-        font-size: $size-header-nano;
-        line-height: $size-header-nano-line;
+        font-size: sizes.$size-header-nano;
+        line-height: sizes.$size-header-nano-line;
       }
     }
   }

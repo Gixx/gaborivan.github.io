@@ -1,6 +1,6 @@
-@import "../colors";
-@import "../sizes";
-@import "../fonts";
+@use "../colors";
+@use "../fonts";
+@use "../sizes";
 
 .c-content {
   width: 100%;
@@ -20,11 +20,11 @@
 
   h3 {
     margin: 0 0 6.4rem 0;
-    font-size: $size-header-micro;
+    font-size: sizes.$size-header-micro;
     font-weight: 800;
-    line-height: $size-header-micro-line;
+    line-height: sizes.$size-header-micro-line;
     text-transform: uppercase;
-    letter-spacing: $size-letter-spacing-expand-more;
+    letter-spacing: sizes.$size-letter-spacing-expand-more;
   }
 
   p {
@@ -36,7 +36,7 @@
     display: block;
     border-width: 0 0 0.1rem 0;
     border-style: solid;
-    border-color: $darker-grey;
+    border-color: colors.$darker-grey;
     width: 2rem;
     margin: 0 0 3.6rem 0;
     padding: 1.2rem 0 0 0;
@@ -74,12 +74,12 @@
 
 
     p {
-      font-family: $font-serif;
+      font-family: fonts.$font-serif;
       font-weight: 400;
       font-style: italic;
       text-align: justify;
-      font-size: $size-text-medium;
-      line-height: $size-text-medium-line;
+      font-size: sizes.$size-text-medium;
+      line-height: sizes.$size-text-medium-line;
       min-height: 3rem;
       padding: 1rem;
     }
@@ -87,8 +87,8 @@
     span {
       display: block;
       text-align: right;
-      font-size: $size-text-small;
-      line-height: $size-text-small-line;
+      font-size: sizes.$size-text-small;
+      line-height: sizes.$size-text-small-line;
       font-style: italic;
 
       &::before,
@@ -98,27 +98,27 @@
     }
 
     &::before {
-      font-family: $font-serif;
+      font-family: fonts.$font-serif;
       position: absolute;
       top: 2rem;
       left: 0;
       display: block;
       content: "“";
-      color: $light-black;
+      color: colors.$light-black;
       font-weight: 700;
-      font-size: $size-quote-sign;
+      font-size: sizes.$size-quote-sign;
     }
 
     &::after {
-      font-family: $font-serif;
+      font-family: fonts.$font-serif;
       position: absolute;
       top: 2rem;
       right: 0;
       display: block;
       content: "”";
-      color: $light-black;
+      color: colors.$light-black;
       font-weight: 700;
-      font-size: $size-quote-sign;
+      font-size: sizes.$size-quote-sign;
     }
   }
 }
@@ -132,8 +132,8 @@
     }
 
     p {
-      font-size: $size-text-medium;
-      line-height: $size-text-medium-line;
+      font-size: sizes.$size-text-medium;
+      line-height: sizes.$size-text-medium-line;
     }
 
     dl {
